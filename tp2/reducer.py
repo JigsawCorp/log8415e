@@ -8,7 +8,7 @@ for line in sys.stdin:
         word, count = line.split()
         count = int(count)
     except:
-	continue
+        continue
     word_count[word] += count
 for word, count in word_count.items():
-    print(word, count)
+    print(count, word)
