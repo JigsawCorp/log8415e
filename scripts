@@ -1,9 +1,0 @@
-#!/bin/bash
-echo "Starting all benchmarks"
-python3 speedtest_script.py
-python3 phoronix_script.py
-source ./IO_test
-source ./IOPS_test
-source ./disk-memory-tests.bash
-echo "Done with benchmarks"
-
