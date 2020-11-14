@@ -8,11 +8,13 @@ do
 	echo "Executing WordCount for data$i:" >> results/linux_time.txt
 	for j in {1..5}
 	do
-		echo "data$i - Execution $j"
+		echo -n "data$i - Execution $j - "
 		echo "data$i - Execution $j:" >> results/linux_time.txt
 		(time cat input_datasets/data$i.txt | tr ' ' '
-		' | sort | uniq -c > results/linux_data${i}_exec${j}.txt) &>> results/linux_time.txt 
+		' | sort | uniq -c > results/linux_data${i}_exec${j}.txt) &> results/linux_time_temp.txt 
+		cat results/linux_time_tmp.txt >> results/linux_time.txt
 		echo "" >> results/linux_time.txt	
+		grep real results/linux_time_tmp.txt | sed 's/real[[:blank:]]*//g'
 	done	
 done
 
