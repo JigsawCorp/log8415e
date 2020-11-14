@@ -1,0 +1,93 @@
+packageJobJar: [] [/usr/lib/hadoop/hadoop-streaming-2.10.0-amzn-0.jar] /tmp/streamjob4619111314850002574.jar tmpDir=null
+20/11/14 18:23:19 INFO client.RMProxy: Connecting to ResourceManager at ip-172-31-51-27.ec2.internal/172.31.51.27:8032
+20/11/14 18:23:20 INFO client.AHSProxy: Connecting to Application History server at ip-172-31-51-27.ec2.internal/172.31.51.27:10200
+20/11/14 18:23:20 INFO client.RMProxy: Connecting to ResourceManager at ip-172-31-51-27.ec2.internal/172.31.51.27:8032
+20/11/14 18:23:20 INFO client.AHSProxy: Connecting to Application History server at ip-172-31-51-27.ec2.internal/172.31.51.27:10200
+20/11/14 18:23:20 INFO lzo.GPLNativeCodeLoader: Loaded native gpl library
+20/11/14 18:23:20 INFO lzo.LzoCodec: Successfully loaded & initialized native-lzo library [hadoop-lzo rev d1e860a34cc1aea3d600c57c5c0270ea41579e8c]
+20/11/14 18:23:20 INFO mapred.FileInputFormat: Total input files to process : 1
+20/11/14 18:23:20 INFO mapreduce.JobSubmitter: number of splits:16
+20/11/14 18:23:20 INFO Configuration.deprecation: yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+20/11/14 18:23:20 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1605373153206_0028
+20/11/14 18:23:21 INFO conf.Configuration: resource-types.xml not found
+20/11/14 18:23:21 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+20/11/14 18:23:21 INFO resource.ResourceUtils: Adding resource type - name = memory-mb, units = Mi, type = COUNTABLE
+20/11/14 18:23:21 INFO resource.ResourceUtils: Adding resource type - name = vcores, units = , type = COUNTABLE
+20/11/14 18:23:21 INFO impl.YarnClientImpl: Submitted application application_1605373153206_0028
+20/11/14 18:23:21 INFO mapreduce.Job: The url to track the job: http://ip-172-31-51-27.ec2.internal:20888/proxy/application_1605373153206_0028/
+20/11/14 18:23:21 INFO mapreduce.Job: Running job: job_1605373153206_0028
+20/11/14 18:23:27 INFO mapreduce.Job: Job job_1605373153206_0028 running in uber mode : false
+20/11/14 18:23:27 INFO mapreduce.Job:  map 0% reduce 0%
+20/11/14 18:23:38 INFO mapreduce.Job:  map 6% reduce 0%
+20/11/14 18:23:41 INFO mapreduce.Job:  map 19% reduce 0%
+20/11/14 18:23:43 INFO mapreduce.Job:  map 25% reduce 0%
+20/11/14 18:23:44 INFO mapreduce.Job:  map 38% reduce 0%
+20/11/14 18:23:46 INFO mapreduce.Job:  map 44% reduce 0%
+20/11/14 18:23:47 INFO mapreduce.Job:  map 88% reduce 0%
+20/11/14 18:23:48 INFO mapreduce.Job:  map 94% reduce 0%
+20/11/14 18:23:51 INFO mapreduce.Job:  map 100% reduce 0%
+20/11/14 18:23:52 INFO mapreduce.Job:  map 100% reduce 14%
+20/11/14 18:23:53 INFO mapreduce.Job:  map 100% reduce 29%
+20/11/14 18:23:55 INFO mapreduce.Job:  map 100% reduce 43%
+20/11/14 18:23:56 INFO mapreduce.Job:  map 100% reduce 57%
+20/11/14 18:23:57 INFO mapreduce.Job:  map 100% reduce 100%
+20/11/14 18:23:57 INFO mapreduce.Job: Job job_1605373153206_0028 completed successfully
+20/11/14 18:23:57 INFO mapreduce.Job: Counters: 51
+	File System Counters
+		FILE: Number of bytes read=157165
+		FILE: Number of bytes written=5527665
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=997596
+		HDFS: Number of bytes written=148844
+		HDFS: Number of read operations=69
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=14
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=16
+		Launched reduce tasks=7
+		Data-local map tasks=8
+		Rack-local map tasks=8
+		Total time spent by all maps in occupied slots (ms)=10846464
+		Total time spent by all reduces in occupied slots (ms)=5176608
+		Total time spent by all map tasks (ms)=225968
+		Total time spent by all reduce tasks (ms)=53923
+		Total vcore-milliseconds taken by all map tasks=225968
+		Total vcore-milliseconds taken by all reduce tasks=53923
+		Total megabyte-milliseconds taken by all map tasks=347086848
+		Total megabyte-milliseconds taken by all reduce tasks=165651456
+	Map-Reduce Framework
+		Map input records=8548
+		Map output records=76151
+		Map output bytes=726608
+		Map output materialized bytes=309132
+		Input split bytes=1920
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=13311
+		Reduce shuffle bytes=309132
+		Reduce input records=76151
+		Reduce output records=13311
+		Spilled Records=152302
+		Shuffled Maps =112
+		Failed Shuffles=0
+		Merged Map outputs=112
+		GC time elapsed (ms)=5032
+		CPU time spent (ms)=34870
+		Physical memory (bytes) snapshot=9579360256
+		Virtual memory (bytes) snapshot=85624315904
+		Total committed heap usage (bytes)=8232370176
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=995676
+	File Output Format Counters 
+		Bytes Written=148844
+20/11/14 18:23:57 INFO streaming.StreamJob: Output directory: output/hadoop/data4_exec2

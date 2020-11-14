@@ -1,0 +1,173 @@
+20/11/14 19:42:03 INFO SparkContext: Running Spark version 2.4.6-amzn-0
+20/11/14 19:42:03 INFO SparkContext: Submitted application: PythonWordCount
+20/11/14 19:42:03 INFO SecurityManager: Changing view acls to: hadoop
+20/11/14 19:42:03 INFO SecurityManager: Changing modify acls to: hadoop
+20/11/14 19:42:03 INFO SecurityManager: Changing view acls groups to: 
+20/11/14 19:42:03 INFO SecurityManager: Changing modify acls groups to: 
+20/11/14 19:42:03 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(hadoop); groups with view permissions: Set(); users  with modify permissions: Set(hadoop); groups with modify permissions: Set()
+20/11/14 19:42:03 INFO Utils: Successfully started service 'sparkDriver' on port 34573.
+20/11/14 19:42:03 INFO SparkEnv: Registering MapOutputTracker
+20/11/14 19:42:03 INFO SparkEnv: Registering BlockManagerMaster
+20/11/14 19:42:03 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+20/11/14 19:42:03 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+20/11/14 19:42:03 INFO DiskBlockManager: Created local directory at /mnt/tmp/blockmgr-236926f9-a9b7-407b-9a28-45465e4b3f9f
+20/11/14 19:42:03 INFO MemoryStore: MemoryStore started with capacity 1028.8 MB
+20/11/14 19:42:03 INFO SparkEnv: Registering OutputCommitCoordinator
+20/11/14 19:42:04 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+20/11/14 19:42:04 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://ip-172-31-51-27.ec2.internal:4040
+20/11/14 19:42:04 INFO Utils: Using initial executors = 50, max of spark.dynamicAllocation.initialExecutors, spark.dynamicAllocation.minExecutors and spark.executor.instances
+20/11/14 19:42:05 INFO RMProxy: Connecting to ResourceManager at ip-172-31-51-27.ec2.internal/172.31.51.27:8032
+20/11/14 19:42:05 INFO Client: Requesting a new application from cluster with 2 NodeManagers
+20/11/14 19:42:05 INFO Configuration: resource-types.xml not found
+20/11/14 19:42:05 INFO ResourceUtils: Unable to find 'resource-types.xml'.
+20/11/14 19:42:05 INFO ResourceUtils: Adding resource type - name = memory-mb, units = Mi, type = COUNTABLE
+20/11/14 19:42:05 INFO ResourceUtils: Adding resource type - name = vcores, units = , type = COUNTABLE
+20/11/14 19:42:05 INFO Client: Verifying our application has not requested more than the maximum memory capability of the cluster (12288 MB per container)
+20/11/14 19:42:05 INFO Client: Will allocate AM container, with 896 MB memory including 384 MB overhead
+20/11/14 19:42:05 INFO Client: Setting up container launch context for our AM
+20/11/14 19:42:05 INFO Client: Setting up the launch environment for our AM container
+20/11/14 19:42:05 INFO Client: Preparing resources for our AM container
+20/11/14 19:42:05 WARN Client: Neither spark.yarn.jars nor spark.yarn.archive is set, falling back to uploading libraries under SPARK_HOME.
+20/11/14 19:42:07 INFO Client: Uploading resource file:/mnt/tmp/spark-865e4b1b-e7d6-426e-b1f9-615365098ecb/__spark_libs__8898635472667041554.zip -> hdfs://ip-172-31-51-27.ec2.internal:8020/user/hadoop/.sparkStaging/application_1605373153206_0049/__spark_libs__8898635472667041554.zip
+20/11/14 19:42:08 INFO Client: Uploading resource file:/etc/spark/conf/hive-site.xml -> hdfs://ip-172-31-51-27.ec2.internal:8020/user/hadoop/.sparkStaging/application_1605373153206_0049/hive-site.xml
+20/11/14 19:42:08 INFO Client: Uploading resource file:/usr/lib/spark/python/lib/pyspark.zip -> hdfs://ip-172-31-51-27.ec2.internal:8020/user/hadoop/.sparkStaging/application_1605373153206_0049/pyspark.zip
+20/11/14 19:42:08 INFO Client: Uploading resource file:/usr/lib/spark/python/lib/py4j-0.10.7-src.zip -> hdfs://ip-172-31-51-27.ec2.internal:8020/user/hadoop/.sparkStaging/application_1605373153206_0049/py4j-0.10.7-src.zip
+20/11/14 19:42:09 INFO Client: Uploading resource file:/mnt/tmp/spark-865e4b1b-e7d6-426e-b1f9-615365098ecb/__spark_conf__4135573304890904802.zip -> hdfs://ip-172-31-51-27.ec2.internal:8020/user/hadoop/.sparkStaging/application_1605373153206_0049/__spark_conf__.zip
+20/11/14 19:42:09 INFO SecurityManager: Changing view acls to: hadoop
+20/11/14 19:42:09 INFO SecurityManager: Changing modify acls to: hadoop
+20/11/14 19:42:09 INFO SecurityManager: Changing view acls groups to: 
+20/11/14 19:42:09 INFO SecurityManager: Changing modify acls groups to: 
+20/11/14 19:42:09 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(hadoop); groups with view permissions: Set(); users  with modify permissions: Set(hadoop); groups with modify permissions: Set()
+20/11/14 19:42:10 INFO Client: Submitting application application_1605373153206_0049 to ResourceManager
+20/11/14 19:42:11 INFO YarnClientImpl: Submitted application application_1605373153206_0049
+20/11/14 19:42:11 INFO SchedulerExtensionServices: Starting Yarn extension services with app application_1605373153206_0049 and attemptId None
+20/11/14 19:42:12 INFO Client: Application report for application_1605373153206_0049 (state: ACCEPTED)
+20/11/14 19:42:12 INFO Client: 
+	 client token: N/A
+	 diagnostics: AM container is launched, waiting for AM container to Register with RM
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1605382931010
+	 final status: UNDEFINED
+	 tracking URL: http://ip-172-31-51-27.ec2.internal:20888/proxy/application_1605373153206_0049/
+	 user: hadoop
+20/11/14 19:42:13 INFO Client: Application report for application_1605373153206_0049 (state: ACCEPTED)
+20/11/14 19:42:14 INFO Client: Application report for application_1605373153206_0049 (state: ACCEPTED)
+20/11/14 19:42:15 INFO Client: Application report for application_1605373153206_0049 (state: ACCEPTED)
+20/11/14 19:42:16 INFO Client: Application report for application_1605373153206_0049 (state: RUNNING)
+20/11/14 19:42:16 INFO Client: 
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: 172.31.63.204
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1605382931010
+	 final status: UNDEFINED
+	 tracking URL: http://ip-172-31-51-27.ec2.internal:20888/proxy/application_1605373153206_0049/
+	 user: hadoop
+20/11/14 19:42:16 INFO YarnClientSchedulerBackend: Application application_1605373153206_0049 has started running.
+20/11/14 19:42:16 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 37341.
+20/11/14 19:42:16 INFO NettyBlockTransferService: Server created on ip-172-31-51-27.ec2.internal:37341
+20/11/14 19:42:16 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+20/11/14 19:42:16 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, ip-172-31-51-27.ec2.internal, 37341, None)
+20/11/14 19:42:16 INFO BlockManagerMasterEndpoint: Registering block manager ip-172-31-51-27.ec2.internal:37341 with 1028.8 MB RAM, BlockManagerId(driver, ip-172-31-51-27.ec2.internal, 37341, None)
+20/11/14 19:42:16 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, ip-172-31-51-27.ec2.internal, 37341, None)
+20/11/14 19:42:16 INFO BlockManager: external shuffle service port = 7337
+20/11/14 19:42:16 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, ip-172-31-51-27.ec2.internal, 37341, None)
+20/11/14 19:42:16 INFO YarnClientSchedulerBackend: Add WebUI Filter. org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter, Map(PROXY_HOSTS -> ip-172-31-51-27.ec2.internal, PROXY_URI_BASES -> http://ip-172-31-51-27.ec2.internal:20888/proxy/application_1605373153206_0049), /proxy/application_1605373153206_0049
+20/11/14 19:42:16 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /metrics/json.
+20/11/14 19:42:16 INFO YarnSchedulerBackend$YarnSchedulerEndpoint: ApplicationMaster registered as NettyRpcEndpointRef(spark-client://YarnAM)
+20/11/14 19:42:16 INFO EventLoggingListener: Logging events to hdfs:/var/log/spark/apps/application_1605373153206_0049
+20/11/14 19:42:16 INFO Utils: Using initial executors = 50, max of spark.dynamicAllocation.initialExecutors, spark.dynamicAllocation.minExecutors and spark.executor.instances
+20/11/14 19:42:16 INFO YarnClientSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+20/11/14 19:42:16 INFO SharedState: loading hive config file: file:/etc/spark/conf.dist/hive-site.xml
+20/11/14 19:42:16 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('hdfs:///user/spark/warehouse').
+20/11/14 19:42:16 INFO SharedState: Warehouse path is 'hdfs:///user/spark/warehouse'.
+20/11/14 19:42:16 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /SQL.
+20/11/14 19:42:16 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /SQL/json.
+20/11/14 19:42:16 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /SQL/execution.
+20/11/14 19:42:16 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /SQL/execution/json.
+20/11/14 19:42:16 INFO JettyUtils: Adding filter org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter to /static/sql.
+20/11/14 19:42:17 INFO StateStoreCoordinatorRef: Registered StateStoreCoordinator endpoint
+20/11/14 19:42:17 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 324.0 KB, free 1028.5 MB)
+20/11/14 19:42:17 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 29.8 KB, free 1028.5 MB)
+20/11/14 19:42:17 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on ip-172-31-51-27.ec2.internal:37341 (size: 29.8 KB, free: 1028.8 MB)
+20/11/14 19:42:17 INFO SparkContext: Created broadcast 0 from textFile at NativeMethodAccessorImpl.java:0
+20/11/14 19:42:18 INFO GPLNativeCodeLoader: Loaded native gpl library
+20/11/14 19:42:18 INFO LzoCodec: Successfully loaded & initialized native-lzo library [hadoop-lzo rev d1e860a34cc1aea3d600c57c5c0270ea41579e8c]
+20/11/14 19:42:18 INFO FileInputFormat: Total input files to process : 1
+20/11/14 19:42:18 INFO deprecation: mapred.output.dir is deprecated. Instead, use mapreduce.output.fileoutputformat.outputdir
+20/11/14 19:42:18 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.DirectFileOutputCommitter
+20/11/14 19:42:18 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+20/11/14 19:42:18 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+20/11/14 19:42:18 INFO DirectFileOutputCommitter: Direct Write: DISABLED
+20/11/14 19:42:18 INFO SparkContext: Starting job: runJob at SparkHadoopWriter.scala:78
+20/11/14 19:42:18 INFO DAGScheduler: Registering RDD 3 (reduceByKey at /home/hadoop/log8415e/tp2/wordcount_spark_hdfs.py:30) as input to shuffle 0
+20/11/14 19:42:18 INFO DAGScheduler: Got job 0 (runJob at SparkHadoopWriter.scala:78) with 2 output partitions
+20/11/14 19:42:18 INFO DAGScheduler: Final stage: ResultStage 1 (runJob at SparkHadoopWriter.scala:78)
+20/11/14 19:42:18 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 0)
+20/11/14 19:42:18 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 0)
+20/11/14 19:42:18 INFO DAGScheduler: Submitting ShuffleMapStage 0 (PairwiseRDD[3] at reduceByKey at /home/hadoop/log8415e/tp2/wordcount_spark_hdfs.py:30), which has no missing parents
+20/11/14 19:42:18 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 12.1 KB, free 1028.5 MB)
+20/11/14 19:42:18 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 7.8 KB, free 1028.5 MB)
+20/11/14 19:42:18 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on ip-172-31-51-27.ec2.internal:37341 (size: 7.8 KB, free: 1028.8 MB)
+20/11/14 19:42:18 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1203
+20/11/14 19:42:18 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 0 (PairwiseRDD[3] at reduceByKey at /home/hadoop/log8415e/tp2/wordcount_spark_hdfs.py:30) (first 15 tasks are for partitions Vector(0, 1))
+20/11/14 19:42:18 INFO YarnScheduler: Adding task set 0.0 with 2 tasks
+20/11/14 19:42:20 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.31.63.204:33458) with ID 2
+20/11/14 19:42:20 INFO ExecutorAllocationManager: New executor 2 has registered (new total is 1)
+20/11/14 19:42:20 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, ip-172-31-63-204.ec2.internal, executor 2, partition 0, NODE_LOCAL, 7928 bytes)
+20/11/14 19:42:20 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1, ip-172-31-63-204.ec2.internal, executor 2, partition 1, NODE_LOCAL, 7928 bytes)
+20/11/14 19:42:20 INFO BlockManagerMasterEndpoint: Registering block manager ip-172-31-63-204.ec2.internal:36213 with 4.8 GB RAM, BlockManagerId(2, ip-172-31-63-204.ec2.internal, 36213, None)
+20/11/14 19:42:21 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.31.55.166:45276) with ID 1
+20/11/14 19:42:21 INFO ExecutorAllocationManager: New executor 1 has registered (new total is 2)
+20/11/14 19:42:21 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on ip-172-31-63-204.ec2.internal:36213 (size: 7.8 KB, free: 4.8 GB)
+20/11/14 19:42:21 INFO BlockManagerMasterEndpoint: Registering block manager ip-172-31-55-166.ec2.internal:45215 with 4.8 GB RAM, BlockManagerId(1, ip-172-31-55-166.ec2.internal, 45215, None)
+20/11/14 19:42:21 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on ip-172-31-63-204.ec2.internal:36213 (size: 29.8 KB, free: 4.8 GB)
+20/11/14 19:42:24 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 3951 ms on ip-172-31-63-204.ec2.internal (executor 2) (1/2)
+20/11/14 19:42:24 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 4009 ms on ip-172-31-63-204.ec2.internal (executor 2) (2/2)
+20/11/14 19:42:24 INFO YarnScheduler: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+20/11/14 19:42:24 INFO PythonAccumulatorV2: Connected to AccumulatorServer at host: 127.0.0.1 port: 34733
+20/11/14 19:42:24 INFO DAGScheduler: ShuffleMapStage 0 (reduceByKey at /home/hadoop/log8415e/tp2/wordcount_spark_hdfs.py:30) finished in 6.258 s
+20/11/14 19:42:24 INFO DAGScheduler: looking for newly runnable stages
+20/11/14 19:42:24 INFO DAGScheduler: running: Set()
+20/11/14 19:42:24 INFO DAGScheduler: waiting: Set(ResultStage 1)
+20/11/14 19:42:24 INFO DAGScheduler: failed: Set()
+20/11/14 19:42:24 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[8] at saveAsTextFile at NativeMethodAccessorImpl.java:0), which has no missing parents
+20/11/14 19:42:24 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 94.3 KB, free 1028.4 MB)
+20/11/14 19:42:24 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 36.5 KB, free 1028.4 MB)
+20/11/14 19:42:24 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on ip-172-31-51-27.ec2.internal:37341 (size: 36.5 KB, free: 1028.8 MB)
+20/11/14 19:42:24 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1203
+20/11/14 19:42:24 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 1 (MapPartitionsRDD[8] at saveAsTextFile at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1))
+20/11/14 19:42:24 INFO YarnScheduler: Adding task set 1.0 with 2 tasks
+20/11/14 19:42:24 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 2, ip-172-31-63-204.ec2.internal, executor 2, partition 0, NODE_LOCAL, 7673 bytes)
+20/11/14 19:42:24 INFO TaskSetManager: Starting task 1.0 in stage 1.0 (TID 3, ip-172-31-63-204.ec2.internal, executor 2, partition 1, NODE_LOCAL, 7673 bytes)
+20/11/14 19:42:24 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on ip-172-31-63-204.ec2.internal:36213 (size: 36.5 KB, free: 4.8 GB)
+20/11/14 19:42:24 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 172.31.63.204:33458
+20/11/14 19:42:25 INFO TaskSetManager: Finished task 1.0 in stage 1.0 (TID 3) in 546 ms on ip-172-31-63-204.ec2.internal (executor 2) (1/2)
+20/11/14 19:42:25 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 2) in 549 ms on ip-172-31-63-204.ec2.internal (executor 2) (2/2)
+20/11/14 19:42:25 INFO YarnScheduler: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+20/11/14 19:42:25 INFO DAGScheduler: ResultStage 1 (runJob at SparkHadoopWriter.scala:78) finished in 0.598 s
+20/11/14 19:42:25 INFO DAGScheduler: Job 0 finished: runJob at SparkHadoopWriter.scala:78, took 6.973978 s
+20/11/14 19:42:25 INFO SparkHadoopWriter: Job job_20201114194218_0008 committed.
+20/11/14 19:42:25 INFO SparkContext: Invoking stop() from shutdown hook
+20/11/14 19:42:25 INFO SparkUI: Stopped Spark web UI at http://ip-172-31-51-27.ec2.internal:4040
+20/11/14 19:42:25 INFO YarnClientSchedulerBackend: Interrupting monitor thread
+20/11/14 19:42:25 INFO YarnClientSchedulerBackend: Shutting down all executors
+20/11/14 19:42:25 INFO YarnSchedulerBackend$YarnDriverEndpoint: Asking each executor to shut down
+20/11/14 19:42:25 INFO SchedulerExtensionServices: Stopping SchedulerExtensionServices
+(serviceOption=None,
+ services=List(),
+ started=false)
+20/11/14 19:42:25 INFO YarnClientSchedulerBackend: Stopped
+20/11/14 19:42:25 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+20/11/14 19:42:25 INFO MemoryStore: MemoryStore cleared
+20/11/14 19:42:25 INFO BlockManager: BlockManager stopped
+20/11/14 19:42:25 INFO BlockManagerMaster: BlockManagerMaster stopped
+20/11/14 19:42:25 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+20/11/14 19:42:25 INFO SparkContext: Successfully stopped SparkContext
+20/11/14 19:42:25 INFO ShutdownHookManager: Shutdown hook called
+20/11/14 19:42:25 INFO ShutdownHookManager: Deleting directory /mnt/tmp/spark-865e4b1b-e7d6-426e-b1f9-615365098ecb
+20/11/14 19:42:25 INFO ShutdownHookManager: Deleting directory /mnt/tmp/spark-dbd09540-fa2a-48e8-9cff-d55ae02ea848
+20/11/14 19:42:25 INFO ShutdownHookManager: Deleting directory /mnt/tmp/spark-865e4b1b-e7d6-426e-b1f9-615365098ecb/pyspark-ed5ee04b-2a34-4c48-a1a3-57c6bf5185c7

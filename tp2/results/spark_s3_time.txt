@@ -1,0 +1,155 @@
+Executing WordCount for data1:
+data1 - Execution 1:
+
+real	0m25.922s
+user	0m28.713s
+sys	0m2.360s
+
+data1 - Execution 2:
+
+real	0m26.446s
+user	0m27.347s
+sys	0m2.438s
+
+data1 - Execution 3:
+
+real	0m26.513s
+user	0m28.936s
+sys	0m2.365s
+
+data1 - Execution 4:
+
+real	0m26.094s
+user	0m27.912s
+sys	0m2.376s
+
+data1 - Execution 5:
+
+real	0m25.842s
+user	0m32.566s
+sys	0m2.473s
+
+Executing WordCount for data2:
+data2 - Execution 1:
+
+real	0m26.316s
+user	0m27.820s
+sys	0m2.285s
+
+data2 - Execution 2:
+
+real	0m26.360s
+user	0m30.977s
+sys	0m2.373s
+
+data2 - Execution 3:
+
+real	0m25.355s
+user	0m28.145s
+sys	0m2.222s
+
+data2 - Execution 4:
+
+real	0m27.282s
+user	0m29.993s
+sys	0m2.335s
+
+data2 - Execution 5:
+
+real	0m26.671s
+user	0m34.659s
+sys	0m2.587s
+
+Executing WordCount for data3:
+data3 - Execution 1:
+
+real	0m25.867s
+user	0m28.407s
+sys	0m2.300s
+
+data3 - Execution 2:
+
+real	0m26.329s
+user	0m29.569s
+sys	0m2.429s
+
+data3 - Execution 3:
+
+real	0m26.346s
+user	0m30.724s
+sys	0m2.468s
+
+data3 - Execution 4:
+
+real	0m25.779s
+user	0m29.132s
+sys	0m2.447s
+
+data3 - Execution 5:
+
+real	0m25.502s
+user	0m28.805s
+sys	0m2.313s
+
+Executing WordCount for data4:
+data4 - Execution 1:
+
+real	0m25.886s
+user	0m28.994s
+sys	0m2.471s
+
+data4 - Execution 2:
+
+real	0m26.072s
+user	0m28.330s
+sys	0m2.256s
+
+data4 - Execution 3:
+
+real	0m27.361s
+user	0m29.947s
+sys	0m2.427s
+
+data4 - Execution 4:
+
+real	0m25.594s
+user	0m28.307s
+sys	0m2.396s
+
+data4 - Execution 5:
+
+real	0m26.651s
+user	0m28.382s
+sys	0m2.516s
+
+Executing WordCount for data5:
+data5 - Execution 1:
+
+real	0m25.254s
+user	0m27.893s
+sys	0m2.333s
+
+data5 - Execution 2:
+
+real	0m25.282s
+user	0m28.040s
+sys	0m2.465s
+
+data5 - Execution 3:
+
+real	0m25.840s
+user	0m29.115s
+sys	0m2.409s
+
+data5 - Execution 4:
+
+real	0m25.571s
+user	0m32.618s
+sys	0m2.367s
+
+data5 - Execution 5:
+
+real	0m26.221s
+user	0m29.751s
+sys	0m2.447s
+

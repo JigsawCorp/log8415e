@@ -1,0 +1,130 @@
+Executing WordCount for data1:
+data1 - Execution 1:
+
+real	0m0.212s
+user	0m0.239s
+sys	0m0.004s
+data1 - Execution 2:
+
+real	0m0.227s
+user	0m0.266s
+sys	0m0.008s
+data1 - Execution 3:
+
+real	0m0.212s
+user	0m0.242s
+sys	0m0.002s
+data1 - Execution 4:
+
+real	0m0.212s
+user	0m0.236s
+sys	0m0.008s
+data1 - Execution 5:
+
+real	0m0.227s
+user	0m0.270s
+sys	0m0.004s
+Executing WordCount for data2:
+data2 - Execution 1:
+
+real	0m0.084s
+user	0m0.088s
+sys	0m0.009s
+data2 - Execution 2:
+
+real	0m0.094s
+user	0m0.111s
+sys	0m0.006s
+data2 - Execution 3:
+
+real	0m0.084s
+user	0m0.095s
+sys	0m0.001s
+data2 - Execution 4:
+
+real	0m0.087s
+user	0m0.100s
+sys	0m0.004s
+data2 - Execution 5:
+
+real	0m0.084s
+user	0m0.092s
+sys	0m0.005s
+Executing WordCount for data3:
+data3 - Execution 1:
+
+real	0m0.046s
+user	0m0.055s
+sys	0m0.004s
+data3 - Execution 2:
+
+real	0m0.041s
+user	0m0.048s
+sys	0m0.000s
+data3 - Execution 3:
+
+real	0m0.046s
+user	0m0.058s
+sys	0m0.000s
+data3 - Execution 4:
+
+real	0m0.045s
+user	0m0.054s
+sys	0m0.004s
+data3 - Execution 5:
+
+real	0m0.041s
+user	0m0.045s
+sys	0m0.004s
+Executing WordCount for data4:
+data4 - Execution 1:
+
+real	0m0.164s
+user	0m0.186s
+sys	0m0.002s
+data4 - Execution 2:
+
+real	0m0.165s
+user	0m0.187s
+sys	0m0.004s
+data4 - Execution 3:
+
+real	0m0.169s
+user	0m0.199s
+sys	0m0.000s
+data4 - Execution 4:
+
+real	0m0.170s
+user	0m0.192s
+sys	0m0.008s
+data4 - Execution 5:
+
+real	0m0.168s
+user	0m0.192s
+sys	0m0.004s
+Executing WordCount for data5:
+data5 - Execution 1:
+
+real	0m0.024s
+user	0m0.029s
+sys	0m0.000s
+data5 - Execution 2:
+
+real	0m0.024s
+user	0m0.026s
+sys	0m0.004s
+data5 - Execution 3:
+
+real	0m0.026s
+user	0m0.034s
+sys	0m0.000s
+data5 - Execution 4:
+
+real	0m0.026s
+user	0m0.034s
+sys	0m0.000s
+data5 - Execution 5:
+
+real	0m0.024s
+user	0m0.025s
+sys	0m0.004s
