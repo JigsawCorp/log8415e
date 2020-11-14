@@ -9,7 +9,7 @@ do
 	do
 		echo "data$i - Execution $j:" >> results/linux_time.txt
 		(time cat input_datasets/data$i.txt | tr ' ' '
-		' | sort | uniq -c > results/linux_data$i.txt) &>> results/linux_time.txt 	
+		' | sort | uniq -c > results/linux_data${i}_exec${j}.txt) &>> results/linux_time.txt 	
 	done	
 done
 
