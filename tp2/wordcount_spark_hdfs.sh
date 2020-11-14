@@ -1,33 +1,16 @@
-# -*- coding: utf-8 -*-
-"""
-Spyder Editor
+#!/bin/bash
 
-WordCount with PySpark and HDFS
-"""
-import sys
-import string
-from pyspark.sql import SparkSession
+# Spark HDFS execution
+echo "Executing Spark HDFS WordCount"
+for i in {1..5}
+do
+	echo "Executing WordCount for data$i:" >> results/spark_hdfs_time.txt
+	for j in {1..5}
+	do
+		echo "data$i - Execution $j:" >> results/spark_hdfs_time.txt
+		(time spark-submit --master yarn log8415e/tp2/wordcount_spark_hdfs.py data1.txt spark/hdfs/data${i}_exec${j} &>> results/spark_hdfs_data${i}_exec${j}.txt) &>> results/spark_hdfs_time.txt
+		echo "" >> results/spark_hdfs_time.txt
+	done	
+done
 
-# Create spark session   
-spark = SparkSession\
-        .builder\
-        .appName("PythonWordCount")\
-        .getOrCreate()
-        
-# Remove punctuation
-def clean(x):
-    lowercase = x.lower()
-    clean_str = lowercase.translate(str.maketrans('', '', string.punctuation))
-    return clean_str
 
-# Connecting to HDFS by providing HDFS host IP and webhdfs port (50070 by default)
-# Read into RDD
-in_path = "hdfs:///user/hadoop/input/" + sys.argv[1]
-text_file = spark.sparkContext.textFile(in_path, use_unicode=False).map(lambda x: x.decode("latin-1"))
-
-# Perform wordcount
-words_list = text_file.flatMap(lambda x: clean(x).split())
-wordcount = words_list.map(lambda x: (x, 1)).reduceByKey(lambda x,y: x+y)
-
-out_path = "hdfs:///user/hadoop/output/" + sys.argv[2]
-wordcount.saveAsTextFile(out_path)
