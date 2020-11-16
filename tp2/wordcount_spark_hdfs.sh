@@ -18,7 +18,7 @@ do
 		(time spark-submit --master yarn log8415e/tp2/wordcount_spark_hdfs.py data$i.txt spark/hdfs/data${i}_exec${j} &>> results/spark_hdfs_data${i}_exec${j}.txt) &> results/spark_hdfs_time_tmp.txt
 		cat results/spark_hdfs_time_tmp.txt >> results/spark_hdfs_time.txt
 		echo "" >> results/spark_hdfs_time.txt
-		grep real results/linux_time_tmp.txt | sed 's/real[[:blank:]]*//g'
+		grep real results/spark_hdfs_time_tmp.txt | sed 's/real[[:blank:]]*//g'
 	done	
 done
 
