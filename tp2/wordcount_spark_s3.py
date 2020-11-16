@@ -14,9 +14,9 @@ spark = SparkSession\
         .getOrCreate()
 
 # Create boto3 session
-session = boto3.Session(aws_access_key_id='ASIAXEEIBJ3CZ4AQNGPP',
-                   aws_secret_access_key='7B8vxDTVYQHuOr1Ag3mR3bmXg0NwJ4PVVAvKhW9W',
-                   aws_session_token='FwoGZXIvYXdzEIX//////////wEaDM/Y8VkjOblacR3/yCLRAY2duH1+EdmUqzT3KZU2WA1CXFy8EVgETgZ3IoTtY+ctZGDzlyG0t9RmFKDrWpVJplu1miEKmAsWMhYnD96cYB0M8YJcBCPDZXpVkNgclCpTE90XgisQayh8xEdv41wvYU3HNtTjf/jm54ez8WdQxymaKAOHa6JyY8cQpFINXiGSRhy5KcTxnM6+2EysHX45S5y0ANPtp6YuScAM22bbE5mYD05t613OCtUb0JbVCoYDr2vctkI8hxJTvK/eQTMV18iBoC66XtmKmYcQ6ZZmhVi2KPPqwP0FMi3m36ZYmsofD88oSuY6aAhaG7Fn3u63i1/5SOpc+0+PSf5Qd3i7t3QMuqIsMIQ=',
+session = boto3.Session(aws_access_key_id='ASIAXEEIBJ3CYJKHM6F3',
+                   aws_secret_access_key='Wwag1tBtEwdjRWTeYQr5+nfcvtmmBRcqN1Cy2sqf',
+                   aws_session_token='FwoGZXIvYXdzELX//////////wEaDDs+t++OpeVPts3T0iLRAU4S/gszvMCY92Mp+bazAgItc2cO1j3Fo9No+A41kAbj6nIxco5uYyGhyaRhxdcmcNlS6sQBgk28Ff//ZiBZBS6k9eKjsRHnSwmICiEljF+5X2r0YkkSKJX7M3VbbbVSweNozFmbR6E/YYnzAgBudhnd8hngum4fJD27iSssaXmoQ0IZm9DRUudjxuHdFFbmisn0iSyurgSnOeCWBAqzotCARXwqAVwjxyToFAK5kn0jgmLd6iFTkApmfyTky5PnUg8tnVt6iYYVdjm2ZgEB3cisKN+dy/0FMi31dQAdhD0i+F4vjHifi3bkeL+ManE8MO0hNbYHGFLI6bSq7QJbPnHmvpt3HU8=',
                    region_name='us-east-1')
                     
 s3 = session.resource('s3')
