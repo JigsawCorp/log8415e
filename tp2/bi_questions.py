@@ -37,7 +37,7 @@ data = io.StringIO(filedata)
 pandas_df=pd.read_csv(data, sep=",")
 pandas_df=pandas_df.astype(str)
 
-# COnvert to pyspark
+# Convert to pyspark
 df = spark.createDataFrame(pandas_df)
 df.show(5)
 
@@ -69,12 +69,12 @@ print("Question 4 (Other way around): Number of VIP members:")
 print(str(num_VIP) + "\n") # 2486
 
 # Question 5: How many Canadian female members purchased an item from Zone7
-q4 = num_members.filter((df.gender == "Female") & (df.country == "CN")).count()
+q4 = num_members.filter((df.gender == "Female") & (df.country == "CN") & (df.zone == "zone7")).count()
 print("Question 5: Number of Canadian female members purchased from Zone7:")
 print(str(q4) + "\n") #215
 
 # Other way around
-q4_1 = df.filter((df.gender == "Female") & (df.country == "CN")).select(df.member_id).distinct().count()
+q4_1 = df.filter((df.gender == "Female") & (df.country == "CN") & (df.zone == "zone7")).select(df.member_id).distinct().count()
 print("Question 5 (Other way around): Number of Canadian female members purchased from Zone7:")
 print(str(q4_1) + "\n") # 1487
 
