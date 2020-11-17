@@ -16,9 +16,10 @@ spark = SparkSession\
         .getOrCreate()
 
 # Create boto3 session
-session = boto3.Session(aws_access_key_id='ASIAXEEIBJ3C4Y77QR7H',
-                   aws_secret_access_key='regNEMN0Q/7+2aiMmL1RN8HbXAxxDB4/XRu9WIXY',
-                   aws_session_token='FwoGZXIvYXdzEIH//////////wEaDPRObcT8oje4GyEwOCLRAQh4IrItsFsw1MtweDpA5QoMB40bFzx0FGMgYkcYa5TEW2p8MhxNiU4BN+EqqKF2IUyFMh9+kh8JTtut7LZ9aUi8Cgg1vdZ+yGE6q2PGYRreW2QbWGrDXM/Jij9rbeL5aARQ1RMIPUZiZRKHuD5dtJo0aEHAdUdjjCtp8arf9QTl31Ch74G6a0q1C9RNOUpCfRc4zkGgdVAa03f9bd1UV2uCBNgqnN+ER8yn7NakbFNUB8uusGQwXb0JWdvqk80mrRfcjClqWPyVy0JDG8FLfeH4KID7v/0FMi3JHee4kEmOy6EkRyLbgX/n0EQMExlMDYv1ngRWagh8Vd05tpZZ/fhJ+/NXLR8=',
+# WARNING: These account credential must be updated regularly, or else will not connect to S3
+session = boto3.Session(aws_access_key_id='ASIAXEEIBJ3CYJKHM6F3',
+                   aws_secret_access_key='Wwag1tBtEwdjRWTeYQr5+nfcvtmmBRcqN1Cy2sqf',
+                   aws_session_token='FwoGZXIvYXdzELX//////////wEaDDs+t++OpeVPts3T0iLRAU4S/gszvMCY92Mp+bazAgItc2cO1j3Fo9No+A41kAbj6nIxco5uYyGhyaRhxdcmcNlS6sQBgk28Ff//ZiBZBS6k9eKjsRHnSwmICiEljF+5X2r0YkkSKJX7M3VbbbVSweNozFmbR6E/YYnzAgBudhnd8hngum4fJD27iSssaXmoQ0IZm9DRUudjxuHdFFbmisn0iSyurgSnOeCWBAqzotCARXwqAVwjxyToFAK5kn0jgmLd6iFTkApmfyTky5PnUg8tnVt6iYYVdjm2ZgEB3cisKN+dy/0FMi31dQAdhD0i+F4vjHifi3bkeL+ManE8MO0hNbYHGFLI6bSq7QJbPnHmvpt3HU8=',
                    region_name='us-east-1')
                     
 s3 = session.resource('s3')

@@ -1,12 +1,5 @@
 #!/bin/bash
 
-# Install dependencies
-sudo yum -y install git
-sudo python3 -m pip install boto3 findspark pandas
-
-# Fetch scripts
-git clone https://github.com/JigsawCorp/log8415e.git
-
 # Fetch input datasets 
 mkdir input_datasets
 wget "http://goo.gl/9GqADe" -O input_datasets/data1.txt
@@ -26,4 +19,3 @@ hdfs dfs -copyFromLocal input_datasets/data5.txt input
 
 # Setup results directory
 mkdir results
-
