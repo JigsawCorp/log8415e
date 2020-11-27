@@ -4,7 +4,7 @@
 echo "Executing Spark S3 WordCount"
 
 # For each dataset
-for i in {1..5}
+for i in {1..1}
 do
 	echo "Executing WordCount for data$i"
 	echo "Executing WordCount for data$i:" >> results/spark_s3_time.txt

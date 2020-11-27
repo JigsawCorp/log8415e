@@ -4,7 +4,7 @@
 echo "Executing Spark HDFS WordCount"
 
 # For each dataset
-for i in {1..5}
+for i in {1..1}
 do
 	echo "Executing WordCount for data$i:" >> results/spark_hdfs_time.txt
 	echo "Executing WordCount for data$i" 
