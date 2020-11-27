@@ -2,8 +2,8 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, regexp_extract
 
 spark = SparkSession.builder.getOrCreate()
-spark._jsc.hadoopConfiguration().set("fs.s3.access.key", "ASIAXEEIBJ3CX7R5RJ5D")
-spark._jsc.hadoopConfiguration().set("fs.s3.secret.key", "H+RfbhSkE5bgXxPidb9JBtqOHrAY6ZWPqV+5aXjO")
+spark._jsc.hadoopConfiguration().set("fs.s3.access.key", "ASIAXEEIBJ3C7ERPV3MT")
+spark._jsc.hadoopConfiguration().set("fs.s3.secret.key", "zfdX/G7MxIX/Ix2EspFM3ByS95uQ/p3W61uVGbpk")
 
 data_path = "s3://log8415efirstbucket/data_dump.csv"
 
